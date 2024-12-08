@@ -12,9 +12,6 @@ export class AppController {
   @Get() // tượng trưng cho phương thức GET của API
   @Render('home')
   getHello() {
-    // return 'this.appService.getHello()';
-    console.log(this.configService.get('PORT'));
-
     const msg = this.appService.getHello();
 
     return {
